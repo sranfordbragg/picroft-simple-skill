@@ -1,0 +1,7 @@
+{
+  "utterance": "set lights to mood",
+  "intent_type": "LightsMood",
+  "intent": {
+    "AssistantKeyword": "set lights to mood"
+  }
+}
