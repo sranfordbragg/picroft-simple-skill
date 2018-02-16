@@ -2,6 +2,6 @@
   "utterance": "Assistant light mode",
   "intent_type": "AssistantIntent",
   "intent": {
-    "AssistantKeyword": "assistant light mode"
+    "AssistantKeyword": "assistant"
   }
 }
