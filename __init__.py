@@ -15,29 +15,34 @@
 # You should have received a copy of the GNU General Public License
 # along with Mycroft Core.  If not, see <http://www.gnu.org/licenses/>.
 
-from os.path import dirname
 from adapt.intent import IntentBuilder
+
 from mycroft.skills.core import MycroftSkill
 from mycroft.util.log import getLogger
 
 __author__ = 'SteveRB'
 
+LOGGER = getLogger(__name__)
+
 
 class SimpleSkill(MycroftSkill):
     def __init__(self):
+        LOGGER.debug("Starting __init__")
         super(SimpleSkill, self).__init__(name="SimpleSkill")
 
     def initialize(self):
-        self.load_data_files(dirname(__file__))
-
+        LOGGER.debug("Starting initialise")
         assistant_intent = IntentBuilder("AssistantIntent").require("AssistantKeyword").build()
-        self.register_intent(assistant_intent, self.assistant_intent)
+        self.register_intent(assistant_intent, self.handle_assistant_intent)
+        LOGGER.debug("Intent registered")
 
-    def assistant_intent(self, message):
+    def handle_assistant_intent(self, message):
+        LOGGER.debug("Handling assistant intent")
         self.speak_dialog("assistant")
 
     def stop(self):
         pass
+
 
 def create_skill():
     return SimpleSkill()
