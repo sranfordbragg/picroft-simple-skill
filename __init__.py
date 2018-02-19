@@ -37,8 +37,7 @@ class SimpleSkill(MycroftSkill):
         LOGGER.debug("Intent registered")
 
     def handle_assistant_intent(self, message):
-        LOGGER.debug("Message was: " + str(message))
-        LOGGER.debug("Handling assistant intent: ")
+        LOGGER.debug("Handling assistant intent")
         self.speak_dialog("assistant")
 
     def stop(self):

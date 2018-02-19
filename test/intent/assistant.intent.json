@@ -1,7 +1,8 @@
 {
-  "utterance": "Set lights to assistant",
-  "intent_type": "AssistantIntent",
+  "utterance": "Assistant mode",
+  "intent_type": "Assistant intent",
   "intent": {
-    "AssistantKeyword": "set lights to assistant"
+    "ThankYouKeyword": "assistant mode"
   }
 }
+
