@@ -1,6 +1,6 @@
 {
   "utterance": "Assistant mode",
-  "intent_type": "Assistant intent",
+  "intent_type": "AssistantIntent",
   "intent": {
     "AssistantKeyword": "assistant mode"
   }
