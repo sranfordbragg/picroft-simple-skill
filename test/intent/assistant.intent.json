@@ -2,6 +2,6 @@
   "utterance": "Set lights to assistant",
   "intent_type": "AssistantIntent",
   "intent": {
-    "AssistantKeyword": "assistant"
+    "AssistantKeyword": "set lights to assistant"
   }
 }
