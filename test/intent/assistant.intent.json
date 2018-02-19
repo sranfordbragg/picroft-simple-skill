@@ -2,7 +2,7 @@
   "utterance": "Assistant mode",
   "intent_type": "Assistant intent",
   "intent": {
-    "ThankYouKeyword": "assistant mode"
+    "AssistantKeyword": "assistant mode"
   }
 }
 
